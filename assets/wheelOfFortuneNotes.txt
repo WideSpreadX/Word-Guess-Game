@@ -1,0 +1,156 @@
+  WHEEL OF FORTUNE HOMEWORK
+  
+  HTML
+	- Classes
+		.container
+			.top
+				.logo
+				.words
+					.words h1
+				.score
+					.counter
+					.connect - EMPTY
+			.board
+				.vannawhite
+					.boardhead #catagory
+					.row1
+						.letterbox #oneOne
+						.letterbox #twoOne
+						.letterbox #threeOne
+						.letterbox #fourOne
+						.letterbox #fiveOne
+						.letterbox #sixOne
+						.letterbox #sevenOne
+						.letterbox #eightOne
+						.letterbox #nineOne
+					.row2
+						.letterbox #oneTwo
+						.letterbox #twoTwo
+						.letterbox #threeTwo
+						.letterbox #fourTwo
+						.letterbox #fiveTwo
+						.letterbox #sixTwo
+						.letterbox #sevenTwo
+						.letterbox #eightTwo
+						.letterbox #nineTwo				
+					.row3
+  						.letterbox #oneThree
+						.letterbox #twoThree
+						.letterbox #threeThree
+						.letterbox #fourThree
+						.letterbox #fiveThree
+						.letterbox #sixThree
+						.letterbox #sevenThree
+						.letterbox #eightThree
+						.letterbox #nineThree
+		.touch
+			.leftkeys
+				.col1  (.colONE)
+					.letter		#letB
+					.letter		#letC
+					.letter		#letD
+					.letter		#letF
+					.letter		#letG
+					.letter		#letH
+					.letter		#letJ
+				.col2
+					.letter		#letK
+					.letter		#letL
+					.letter		#letM
+					.letter		#letN
+					.letter		#letP
+					.letter		#letQ
+					.letter		#letR
+			.middle
+				.wheel                                  <<<<<<<<<<<<     CHANGE TO #wheel      <<<<<<<<<<<<<<<<
+					.spinner
+						div.slice*24
+							
+			.rightkeys
+				.col1 (.colONE)
+					.letter		#letS
+					.letter		#letT
+					.letter		#letV
+					.letter		#letW
+					.letter		#letX
+					.letter		#letY
+					.letter		#letZ
+				.col2
+					.letter .vowl ( .vowl {
+					.letter .vowl		background: red;
+					.letter .vowl		color: #fff;
+					.letter .vowl	}
+					.letter .vowl		!! .vowl COSTS POINTS TO USE !!
+  CSS
+  
+  
+  JAVASCRIPT
+	
+  Starting the game:
+	1. User enters first name
+		a. name is stored as a variable
+		b. {if name === predefined variable} use a special array with a different word list...
+				EXAMPLE:  Special User - Zoee (Age 1.5) prompt("Please enter your name.") They type in Zoee. Now, zoee() accesses it's array and only uses words on the word board made for her.
+						  Special User - Sophia (Age 4)
+						  Special User - Isabelle (Age 6)
+						  Special User - Hope (Age 9)
+						  Special User - Ole Man (Age 75) <--- Lol, he's getting all the jokes
+		c. else {just use name for alert and prompt purposes}
+	
+	2. User starts new game
+		a. new game button
+	
+	3. Game Play
+		a. user clicks on spinning wheel for their "spin" ----------- SPIN ------------- LOOP START
+			i. Math.floor(Math.random() * (0 - 4000) + 4000)
+			
+					var spinOne = (
+						arrowTime: (0 - 61);
+					)
+					var spinTwo = (
+						arrowTime = (62 - 123);
+					)	
+					var spinThree = (
+						arrowTime = (124 - 185);
+					)
+					var spinFour = (
+						arrowTime = (186 - 247)
+					)
+							ETC ETC ETC ETC >>>>> UP TO spinTwentyFour = (
+															arrowTime = (3939 - 4000)
+					
+				WHEEL SPIN Math
+					width: 500px;
+					height: 500px;
+					Slices on Spinner: 24;				CREATE CLASS IN WHEEL: .slice
+					full rotation: 4000ms;
+					
+					----------------------------------------------------------------------------------------------------------------------------------------------------
+					
+						/*C = 2PIr*/
+						
+						2*3.14*250 = 1570px
+						
+						1570/24 = 65.4px;
+						
+						4000/65.4 = 61ms
+						
+						Every .slice will be on the judgment arrow for 61ms
+						
+					-----------------------------------------------------------------------------------------------------------------------------------------------------
+			ii. the slice chosen will be the point amount for/if the user selects a correct letter.  if there are multiple same letters (_ _ a _ a _ a) and the spinner landed on
+			    .slice with an h3 value of $600, then user will get $1800.  if only one letter corresponds to user guess then only $600 will be rewarded.
+		b. user selects a letter that hasn't already been chosen yet.
+			i. every button(letter) has an ID of #let(THE LETTER) {#letS or #letB}
+			ii. every letter ID searches active rows for corresponding letters.
+			iii. when a letter is correct: 
+					-the background will turn #fff and play "ding" audio;
+					-wait 700ms and ease-in #000 text;
+					-wait 1000ms and continue looking;
+					
+					-when we get to the end of the board and run out matches: go back to SPIN			-------------------					LOOP END
+					
+  Rules of the game:
+  
+	1.
+  

@@ -13,15 +13,33 @@
 <body>
     <div class="container">
         <div class="top">
+            <div class="userHub">
+                <form action="post">
+                    <input class="left make-it-slow" id="user" type="text" placeholder="Please enter your name">
+                    <input class="left make-it-slow" id="age" type="text" placeholder="Please enter your age">
+                    <select name="age">
+                        <option id="choiceKids" value="kids">Kids</option>
+                        <option id="choiceAdults" value="words">Adults</option>
+                    </select>
+                    <button onclick="newRound()">Let's Go!</button>
+                </form>
+                <div class="counter">
+                    <h3>$</h3>
+                    <p>000,025,350.00</p>
+                </div>
+            </div>
+            <div id="trialOne" class="trial">
+                <h2 id="trialTwo"></h2>
+                <h2 id="trialTwo"></h2>
+                <h2 id="trialTwo"></h2>
+                <h2 id="trialTwo"></h2>
+            </div>
             <div class="logo">
                 <div class="words">
                     <h1>Wheel of Fortune</h1>
                 </div>
                 <div class="score">
-                    <div class="counter">
-                        <h3>$</h3>
-                        <p>000,000,000.00</p>
-                    </div>
+
                     <div class="connect"></div>
                 </div>
             </div>
@@ -31,34 +49,34 @@
                 <div class="boardhead">
                     <h1>Guess The Phrase</h1>
                 </div>
-                <div class="row1">
-                    <div class="letterbox1">
+                <div id="rowString" class="row1">
+                    <div id="one" class="letterbox1">
                         <h2>W</h2>
                     </div>
-                    <div class="letterbox1">
+                    <div id="two" class="letterbox1">
                         <h2>H</h2>
                     </div>
-                    <div class="letterbox1">
+                    <div id="three" class="letterbox1">
                         <h2>E</h2>
                     </div>
-                    <div class="letterbox1">
+                    <div id="four" class="letterbox1">
                         <h2>E</h2>
                     </div>
-                    <div class="letterbox1">
+                    <div id="five" class="letterbox1">
                         <h2>L</h2>
                     </div>
-                    <div class="letterbox1">
+                    <div id="six" class="letterbox1">
                     </div>
-                    <div class="letterbox1">
+                    <div id="seven" class="letterbox1">
                     </div>
-                    <div class="letterbox1">
+                    <div id="eight" class="letterbox1">
                         <h2>O</h2>
                     </div>
-                    <div class="letterbox1">
+                    <div id="nine" class="letterbox1">
                         <h2>F</h2>
                     </div>
                 </div>
-                <div class="row1">
+                <div class="row2">
                     <div class="letterbox1">
                     </div>
                     <div class="letterbox1">
@@ -85,7 +103,7 @@
                     <div class="letterbox1">
                     </div>
                 </div>
-                <div class="row1">
+                <div class="row3">
                     <div class="letterbox1">
                     </div>
                     <div class="letterbox1">
@@ -210,9 +228,14 @@
                 </div>
             </div>
         </div>
-        <div class="keys"></div>
+        <div class="keys">
+            <div class="foot">
+                <p><a href="https://drive.google.com/file/d/1gMVePS0Q6-zkXukzVodqY7Qd2GB6Ze8S/view">widespread</a></p>
+            </div>
+        </div>
         <div class="score"></div>
     </div>
+    <script src="./assets/javascript/game.js"></script>
 </body>
 
 </html>

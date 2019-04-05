@@ -1,0 +1,43 @@
+			WHEEL OF MISFORTUNE
+	
+	NEED:
+		i. 		onclick funtion for each chooseLetter
+		ii.		change fonts
+		iii. 	add images
+		iv.		add audio files
+		v.		
+	
+	
+	1.	Getting players name
+		
+		a.	var name = prompt("Hey!  Welcome to Wheel Of Fortune!!! What is your name?");
+			console.log("Good luck " + name + "!!!")
+		
+	2.  Choosing a random word
+	
+		a.	var words = ["javascipt","python","computer","program","keyboard","mouse","touchpad","scroll","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",""];
+			
+		b. 	var word = words[Math.floor(Math.random() * words.length)];  <<<<<<Pics a random word out our words() variable
+		
+	3.  Setting up our word on the game board
+		
+		a. 	var answerArray = [];
+			for (var i = 0; i < word.length; i++) {
+				answerArray[i] = "";
+			}
+			
+			var remainingLetters = word.length;
+		
+		b.	for (var j = 0; j < word.length; j++) {						<<<<<<<<<<Updating the game
+				if (word[j] === guess) {
+					answerArray = guess;
+					remainingLetters--;
+				}
+			}
+
+		c.	use toLowerCase to change all letters entered into a lower case format
+		
+	4.  Ending the game
+	
+		a. 	alert(answerArray.join(" "));
+				alert("Great Job!  You solved the puzzle!!!  The word was " + word);
